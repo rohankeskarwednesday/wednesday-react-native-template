@@ -1,7 +1,7 @@
 name: react-native-template
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 jobs:
   install-and-test:
     runs-on: ubuntu-latest

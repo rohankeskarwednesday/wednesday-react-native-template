@@ -23,6 +23,7 @@ function SimpsonsLoveWednesday({ instructions, user, userErrorMessage }) {
   return (
     <>
       <LogoWithInstructions instructions={instructions} />
+      Test
       <If
         condition={!userErrorMessage}
         otherwise={<Error>{userErrorMessage}</Error>}
