@@ -30,10 +30,7 @@
     "owner": "abhishek-ws",
     "ios": {
       "bundleIdentifier": "com.wednesdaysolutions.wsrntjs",
-      "buildNumber": "1",
-      "runtimeVersion": {
-        "policy": "sdkVersion"
-      }
+      "buildNumber": "1"
     }
   }
 }
