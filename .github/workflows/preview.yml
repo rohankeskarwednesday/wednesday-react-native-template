@@ -37,3 +37,4 @@ jobs:
         uses: expo/expo-github-action/preview@v8
         with:
           command: eas update --auto
+          github-token: ${{ secrets.GH_PAT }}
