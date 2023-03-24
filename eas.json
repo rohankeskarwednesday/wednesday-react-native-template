@@ -22,6 +22,12 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "abhishek@wednesday.is",
+        "ascAppId": "6446720322",
+        "appleTeamId": "P7GL36U2SS"
+      }
+    }
   }
 }
