@@ -2,7 +2,7 @@ name: Bumpup
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   update-build-number:
