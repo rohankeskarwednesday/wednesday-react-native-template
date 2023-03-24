@@ -51,6 +51,7 @@
     "expo-image-picker": "~14.0.1",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
+    "expo-updates": "~0.15.6",
     "global": "^4.4.0",
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
