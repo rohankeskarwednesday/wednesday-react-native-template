@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main # replace with the desired branch name
+
+jobs:
+  update-build-number:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update Build Number
+        run: |
+          sed -i 's/"buildNumber": "[^"]*"/"buildNumber": "2"/g' app.json # Replace '2' with desired build number
+          git config --global user.email "abhishek@wednesday.is"
+          git config --global user.name "Abhishek Mishra"
+          git commit -am "Bumpup build number"
+          git push
