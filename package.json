@@ -47,7 +47,6 @@
     "axios-mock-adapter": "^1.17.0",
     "babel-plugin-react-intl": "3.0.1",
     "babel-preset-react-native": "^4.0.1",
-    "eas-cli": "^3.8.1",
     "expo": "~47.0.12",
     "expo-image-picker": "~14.0.1",
     "expo-splash-screen": "~0.17.5",
