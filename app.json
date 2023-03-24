@@ -11,14 +11,16 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/4f7e7729-7795-4d18-a511-6b1f7dfcf06e"
     },
     "assetBundlePatterns": ["**/*"],
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.wednesdaysolutions.wsrntjs"
+      "package": "com.wednesdaysolutions.wsrntjs",
+      "runtimeVersion": "1.0.0"
     },
     "extra": {
       "eas": {
@@ -28,7 +30,10 @@
     "owner": "abhishek-ws",
     "ios": {
       "bundleIdentifier": "com.wednesdaysolutions.wsrntjs",
-      "buildNumber": "1"
+      "buildNumber": "7",
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
     }
   }
 }
