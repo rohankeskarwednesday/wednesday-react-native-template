@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v3
@@ -31,3 +33,17 @@ jobs:
 
       - name: 🚀 Submit app
         run: eas submit --platform ios --latest --non-interactive
+
+      - name: Get last build number
+        id: last_build_number
+        run: |
+          echo ::set-output name=build_number::$(sed -nE 's/.*"buildNumber": "([0-9]+)".*/\1/p' app.json)
+
+      - name: 🔏 Update Build Number
+        run: |
+          new_build_number=$(( ${{ steps.last_build_number.outputs.build_number }} + 1 ))
+          sed -i "s/\"buildNumber\": \"[^\"]*\"/\"buildNumber\": \"$new_build_number\"/g" app.json
+          git config --global user.email "abhishek@wednesday.is"
+          git config --global user.name "Abhishek Mishra"
+          git commit -am "Bumpup build number"
+          git push
