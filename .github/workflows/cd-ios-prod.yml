@@ -1,12 +1,12 @@
-name: Deploy to Expo
+name: Deploy to testflight
 on:
   push:
     branches:
-      - dev
+      - master
 jobs:
-  expo-build:
+  deploy-to-testflight:
     runs-on: ubuntu-latest
-    environment: development
+    environment: prod
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v3
@@ -27,4 +27,7 @@ jobs:
         run: yarn install
 
       - name: 🚀 Build app
-        run: eas build --platform ios --profile development --non-interactive
+        run: eas build --platform ios --profile production --non-interactive
+
+      - name: 🚀 Submit app
+        run: eas submit --platform ios --latest --non-interactive
