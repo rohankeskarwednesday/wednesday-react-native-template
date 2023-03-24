@@ -5,11 +5,14 @@
   "build": {
     "development": {
       "ios": {
+        "simulator": true,
+        "buildConfiguration": "Debug",
         "resourceClass": "m-medium"
       }
     },
     "preview": {
       "ios": {
+        "simulator": true,
         "resourceClass": "m-medium"
       }
     },
