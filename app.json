@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-template-ws",
-    "slug": "rnt-ws",
+    "slug": "rnt-ws1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,7 +18,17 @@
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.wednesdaysolutions.rntws"
+      "package": "com.wednesdaysolutions.wsrntjs"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4f7e7729-7795-4d18-a511-6b1f7dfcf06e"
+      }
+    },
+    "owner": "abhishek-ws",
+    "ios": {
+      "bundleIdentifier": "com.wednesdaysolutions.wsrntjs",
+      "buildNumber": "1"
     }
   }
 }
