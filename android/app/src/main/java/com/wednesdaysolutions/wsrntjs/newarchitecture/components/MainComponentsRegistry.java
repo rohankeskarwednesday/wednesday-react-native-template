@@ -1,4 +1,4 @@
-package com.wednesdaysolutions.rntws.newarchitecture.components;
+package com.wednesdaysolutions.wsrntjs.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

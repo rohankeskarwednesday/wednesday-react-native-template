@@ -1,4 +1,4 @@
-package com.wednesdaysolutions.rntws.newarchitecture.modules;
+package com.wednesdaysolutions.wsrntjs.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

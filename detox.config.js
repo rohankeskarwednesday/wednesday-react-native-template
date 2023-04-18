@@ -20,9 +20,9 @@ module.exports = {
     'ios.release': {
       type: 'ios.app',
       build:
-        'xcodebuild -workspace ios/eastestsexample.xcworkspace -scheme eastestsexample -configuration Release -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
+        'xcodebuild -workspace ios/reactnativetemplatews.xcworkspace -scheme reactnativetemplatews -configuration Release -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
       binaryPath:
-        'ios/build/Build/Products/Release-iphonesimulator/eastestsexample.app'
+        'ios/build/Build/Products/Release-iphonesimulator/reactnativetemplatews.app'
     },
     'android.release': {
       type: 'android.apk',
@@ -41,7 +41,7 @@ module.exports = {
     emulator: {
       type: 'android.emulator',
       device: {
-        avdName: 'pixel_4'
+        avdName: 'Pixel_4_API_30'
       }
     }
   },

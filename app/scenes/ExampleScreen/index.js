@@ -66,7 +66,11 @@ class ExampleScreen extends React.Component {
               user={this.props.user}
             />
             <CustomButtonParentView>
-              <Button onPress={this.requestFetchUser()} title="Refresh" />
+              <Button
+                onPress={this.requestFetchUser()}
+                title="Refresh"
+                testID="refresh-button"
+              />
             </CustomButtonParentView>
           </View>
         )}

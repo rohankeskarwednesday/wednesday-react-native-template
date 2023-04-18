@@ -7,22 +7,31 @@
       "ios": {
         "simulator": true,
         "buildConfiguration": "Debug",
-        "resourceClass": "m-medium"
+        "resourceClass": "m1-medium"
       },
       "channel": "development"
     },
     "preview": {
       "ios": {
         "simulator": true,
-        "resourceClass": "m-medium"
+        "resourceClass": "m1-medium"
       },
       "channel": "preview"
     },
     "production": {
       "ios": {
-        "resourceClass": "m-medium"
+        "resourceClass": "m1-medium"
       },
       "channel": "production"
+    },
+    "test": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease :app:assembleAndroidTest -DtestBuildType=release",
+        "withoutCredentials": true
+      },
+      "ios": {
+        "simulator": true
+      }
     }
   },
   "submit": {

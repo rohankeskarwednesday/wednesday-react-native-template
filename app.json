@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-template-ws",
-    "slug": "rnt-ws1",
+    "name": "rnt-ws",
+    "slug": "rnt-ws",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,25 +12,25 @@
     },
     "updates": {
       "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/4f7e7729-7795-4d18-a511-6b1f7dfcf06e"
+      "url": "https://u.expo.dev/d15f2bd7-5bb0-4993-9398-30068c4749cd"
     },
     "assetBundlePatterns": ["**/*"],
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.wednesdaysolutions.wsrntjs",
+      "package": "com.wednesdaysolutions.rntws",
       "runtimeVersion": "1.0.0"
     },
     "extra": {
       "eas": {
-        "projectId": "4f7e7729-7795-4d18-a511-6b1f7dfcf06e"
+        "projectId": "d15f2bd7-5bb0-4993-9398-30068c4749cd"
       }
     },
     "plugins": ["@config-plugins/detox"],
-    "owner": "abhishek-ws",
+    "owner": "rohan_keskar_wednesday",
     "ios": {
-      "bundleIdentifier": "com.wednesdaysolutions.wsrntjs",
+      "bundleIdentifier": "com.wednesdaysolutions.rntws",
       "buildNumber": "8",
       "runtimeVersion": {
         "policy": "sdkVersion"

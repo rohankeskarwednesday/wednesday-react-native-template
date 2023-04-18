@@ -1,4 +1,4 @@
-package com.wednesdaysolutions.rntws.newarchitecture;
+package com.wednesdaysolutions.wsrntjs.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.wednesdaysolutions.rntws.BuildConfig;
-import com.wednesdaysolutions.rntws.newarchitecture.components.MainComponentsRegistry;
-import com.wednesdaysolutions.rntws.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.wednesdaysolutions.wsrntjs.BuildConfig;
+import com.wednesdaysolutions.wsrntjs.newarchitecture.components.MainComponentsRegistry;
+import com.wednesdaysolutions.wsrntjs.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.wednesdaysolutions.rntws;
+package com.wednesdaysolutions.wsrntjs;
 
 import android.os.Build;
 import android.os.Bundle;
