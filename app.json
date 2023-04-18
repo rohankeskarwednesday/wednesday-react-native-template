@@ -27,6 +27,7 @@
         "projectId": "4f7e7729-7795-4d18-a511-6b1f7dfcf06e"
       }
     },
+    "plugins": ["@config-plugins/detox"],
     "owner": "abhishek-ws",
     "ios": {
       "bundleIdentifier": "com.wednesdaysolutions.wsrntjs",
